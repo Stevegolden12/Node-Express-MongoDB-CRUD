@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\controllers",
+    "\\layouts",
     "\\models"
   ],
-  "SelectedNode": "\\journal",
+  "SelectedNode": "\\controllers\\employeeController.js",
   "PreviewInSolutionExplorer": false
 }
