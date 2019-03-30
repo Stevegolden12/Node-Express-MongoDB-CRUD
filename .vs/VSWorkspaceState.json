@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\controllers",
-    "\\layouts",
-    "\\models"
+    "\\diagnostic.data",
+    "\\journal",
+    "\\models",
+    "\\views",
+    "\\views\\employee"
   ],
-  "SelectedNode": "\\controllers\\employeeController.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
