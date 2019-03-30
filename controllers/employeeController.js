@@ -28,5 +28,9 @@ function insertRecord(req, res) {
   });
 }
 
+router.get('/list', (req, res) => {
+  res.json('from list');
+})
+
 
 module.exports = router;
