@@ -8,6 +8,6 @@
     "\\views",
     "\\views\\employee"
   ],
-  "SelectedNode": "\\server.js",
+  "SelectedNode": "\\models\\db.js",
   "PreviewInSolutionExplorer": false
 }
