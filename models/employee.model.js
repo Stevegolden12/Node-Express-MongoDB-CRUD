@@ -17,7 +17,7 @@ var employeeSchema = new mongoose.Schema({
 })
 
 employeeSchema.path('email').validate((val) => {
-  emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[0-9]{1,3}\.[0-9]{1,3}))
+  emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[0-9]{1,3}\.[0-9]{1,3}))/
   return emailRegex.test(val);
 }, 'Invalid e-mail')
 
