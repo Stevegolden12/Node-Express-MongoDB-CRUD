@@ -6,7 +6,8 @@
     "\\journal",
     "\\models",
     "\\views",
-    "\\views\\employee"
+    "\\views\\employee",
+    "\\views\\layouts"
   ],
   "SelectedNode": "\\models\\db.js",
   "PreviewInSolutionExplorer": false
