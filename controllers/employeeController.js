@@ -37,13 +37,19 @@ function insertRecord(req, res) {
   });
 }
 
-function updateRecord(req.res) {
-  Employee.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err, true) => {
+function updateRecord(req, res) {
+  Employee.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
     if (!err) { res.redirect('employee/list'); }
     else {
       if (err.name == 'ValidationError') {
         handleValidationError(err, req.body)
+        res.render("employee/addOrEdit", {
+          viewTitle: 'Update Employee',
+          employee: req.body
+        })
       }
+      else
+        console.log('Error during record update : ' + err)
     }
   })
 }
@@ -83,5 +89,14 @@ function handleValidationError(err, body) {
     })
   })
 }
+
+router.get('/delete/:id', (req, res) => {
+  Employee.findByIdAndRemove(req.params.id, (err, docs) => { 
+    if (!err) {
+      res.redirect('/employee/list')
+    }
+    else { console.log('Error in employee delete : ' + err) }
+  })
+})
 
 module.exports = router;
