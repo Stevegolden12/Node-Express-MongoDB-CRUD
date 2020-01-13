@@ -9,6 +9,6 @@
     "\\views\\employee",
     "\\views\\layouts"
   ],
-  "SelectedNode": "\\views\\employee\\list.hbs",
+  "SelectedNode": "\\server.js",
   "PreviewInSolutionExplorer": false
 }
